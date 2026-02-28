@@ -1,4 +1,4 @@
-name: Daily Auto Commit - 24f1002465@ds.study.iitm.ac.in
+name: Daily Auto Commit
 
 on:
   schedule:
@@ -9,14 +9,14 @@ permissions:
   contents: write
 
 jobs:
-  commit-job:
+  commit-job-24f1002465@ds.study.iitm.ac.in:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Daily commit by 24f1002465@ds.study.iitm.ac.in
+      - name: Add daily update
         run: |
           echo "Daily update on $(date)" >> daily-log.txt
 
